@@ -1,25 +1,28 @@
 
 
 body{
-    /* background-color: rgb(186, 72, 72); */
-width: 100%;
+    
+/* width: 100%; */
     padding: 0;
     margin: 0;
 }
 #home-section{
     background-color: rgb(1, 1, 1);
-    /* width: 100%; */
     color: white;
-   padding-left: 15%;
+    /* padding-left: 15%; */
+  
 }
-
-
 
 
 .div1{
     display: flex;
     position: fixed;
 top: 0px;
+background-color: rgb(33, 32, 32);
+width: 100%;
+padding-left: 15%;
+height: 7%;
+
 }
 
 .ul{
@@ -27,29 +30,27 @@ top: 0px;
     list-style: none;
 margin-left: 600px;
 
-
 }
 
 .nav-item{
 margin-left: 80px;
 
-
 }
 
 .nav-link{
     color: white;
-
 }
 
-.span1{
+.nav-link:hover{
     color: orange;
 }
 
 .div2{
     display: flex;
+  padding-left: 15%;
 }
 
-.div3{
+.div3{  
     padding-top: 12.5%;
     padding-bottom: 12%;
 }
@@ -79,7 +80,7 @@ margin-left: 80px;
 }
 
 .img-about{
-    width: 100%;
+    width: 600px;
     height: 100%;
 
 }
@@ -103,6 +104,7 @@ margin-left: 80px;
 }
 
 #about-section{
+    padding-left: 6%;
     padding-top: 2%;
     padding-bottom: 5%;
     background-color: black;
@@ -148,7 +150,7 @@ margin-left: 80px;
 
  .div9{
   position: relative;
-  right: 100px;
+  right: 60px;
  }
 
  .div9 p{
@@ -192,7 +194,7 @@ margin-left: 80px;
 
  .main-div{
     display: flex;
-    margin-left: 6%;
+    margin-left: 7%;
     
  }
 .div11{
@@ -206,6 +208,7 @@ margin-left: 80px;
 .div11:hover{
     background-color: rgb(0, 221, 255);
     color: white;
+    
 }
 
  .div11 i{
@@ -238,9 +241,59 @@ transition:  2s ;
     
 
  }
+
+
+ #footer-section{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 3% 0%;
+    
+ }
+
+
+ .footer-div i{
+color: rgb(255, 255, 255);
+font-size: 20px;
+background-color: rgb(56, 51, 51);
+padding: 25px;
+border-radius: 50%;
+/* animation: myani 10s infinite; */
+margin-left: 1%;
+ }
+
+
+
+
+ /* @keyframes myani {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33%{
+        transform: translateX(-100%);
+    }
+    66.66%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+ } */
+  
+
+ .ancher{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+ }
+
+ .hr{
+    width: 100%;
+ }
  
 
- @media  (max-width: 600px){
+ @media only screen and (max-width: 600px){
 
     #home-section{
         background-color: rgb(1, 1, 1);
@@ -252,13 +305,15 @@ transition:  2s ;
     
     
     .div1 {
-        display: flex;
+        display: none;
         position: fixed;
     top: 0px;
         
-  
     }
     
+    .arbab{
+        display: none;
+    }
     .ul{
         flex-direction: column;
 
@@ -357,6 +412,8 @@ transition:  2s ;
         /* padding-top: 5%; */
         background-color: black;
         color: white;
+     padding-left: 2%;
+
     }
     
     .div5{
@@ -369,7 +426,7 @@ transition:  2s ;
     }
     
     .div6 p{
-        width: 200px;
+        width: 50%;
         opacity: 70%;
         font-size: 10px;
     }
@@ -385,13 +442,14 @@ transition:  2s ;
      }
     
      .div7 div h1{
-        font-size: 10px;
+        font-size: 13.5px;
         width: 200px;
      }
     
     
-     .div9{
-        margin-right: 0%;
+     .div9 p{
+        margin-right: 2%;
+    
      }
      .hh{
         font-size: 10px;
@@ -419,7 +477,7 @@ transition:  2s ;
         background-color: rgb(1, 1, 1);
         color: white;
        /* padding: 2%; */
-     
+     padding-left: 2%;
     
     }
     
@@ -467,14 +525,25 @@ transition:  2s ;
     }
 
 
-  
-   
-    
      .div11 i{
         color: orange;
         font-size: 20px;
      }
     
- 
+
+     .div11 hr{
+    display: none;
     
+     }
+     .footer-div i{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        background-color: rgb(56, 51, 51);
+        padding: 15px;
+        border-radius: 50%;
+         }
+         .ancher{
+            color: white;
+            font-size: 15px;
+         } 
  }
